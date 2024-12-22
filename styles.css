@@ -1,188 +1,64 @@
-/* Estilos básicos */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="jhoxz.ico" type="image/x-icon">
+    <title>Jhoxz Connect</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>Jhoxz</h1>
+        </div>
+        <nav class="nav" aria-label="Main Navigation">
+            <ul>
+                <li><a href="designer.html">Design Gráfico</a></li>
+                <li><a href="vfx.html">Edição de Clipe</a></li>
+                <li><a href="sobremim.html">Sobre Mim</a></li>
+                <li><a href="contact.html">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="socials">
+            <a href="https://instagram.com/seuusuario" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://twitter.com/seuusuario" target="_blank" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://youtube.com/seucanal" target="_blank" aria-label="YouTube">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </div>
+    </header>
+    
+    <main>
+        <section id="home" class="intro">
+            <h2>Bem-vindo ao Jhoxz Connect!</h2>
+            <p>Sou um designer gráfico e editor de videoclipes de música, dedicado a transformar suas ideias em realidade.</p>
+        </section>
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-}
+        <section id="portfolio" class="gallery">
+            <h2>Meu Trabalho</h2>
+            <div class="gallery-container">
+                <img src="img1.jpg" alt="Imagem 1">
+                <img src="img2.jpg" alt="Imagem 2">
+                <img src="img3.jpg" alt="Imagem 3">
+                <!-- Adicione mais imagens conforme necessário -->
+            </div>
+        </section>
 
-.header .logo h1 {
-    margin: 0;
-}
+        <section id="contact" class="contact">
+            <h2>Contato</h2>
+            <p>Entre em contato para discutir suas ideias e projetos.</p>
+            <a href="mailto:seuemail@example.com" class="contact-btn">Enviar Email</a>
+        </section>
+    </main>
 
-.nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-.nav ul li {
-    margin: 0 10px;
-}
-
-.nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.socials a {
-    color: #fff;
-    margin: 0 10px;
-    text-decoration: none;
-}
-
-/* Estilos responsivos */
-@media (max-width: 768px) {
-    .header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .nav ul {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .nav ul li {
-        margin: 5px 0;
-    }
-
-    .socials {
-        display: flex;
-        justify-content: flex-start;
-        width: 100%;
-    }
-
-    .socials a {
-        margin: 5px 10px 0 0;
-    }
-}
-
-@media (max-width: 480px) {
-    .header {
-        padding: 10px;
-    }
-
-    .nav ul li {
-        margin: 3px 0;
-    }
-
-    .socials {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .socials a {
-        margin: 3px 0;
-    }
-}
-
-/* Estilos básicos */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-}
-
-.header .logo h1 {
-    margin: 0;
-}
-
-.nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-.nav ul li {
-    margin: 0 10px;
-}
-
-.nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s ease-in-out;
-}
-
-.nav ul li a:hover {
-    color: #007BFF; /* Azul */
-}
-
-.socials a {
-    color: #fff;
-    margin: 0 10px;
-    text-decoration: none;
-    transition: color 0.3s ease-in-out;
-}
-
-.socials a:hover {
-    color: #007BFF; /* Azul */
-}
-
-/* Estilos responsivos */
-@media (max-width: 768px) {
-    .header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .nav ul {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .nav ul li {
-        margin: 5px 0;
-    }
-
-    .socials {
-        display: flex;
-        justify-content: flex-start;
-        width: 100%;
-    }
-
-    .socials a {
-        margin: 5px 10px 0 0;
-    }
-}
-
-@media (max-width: 480px) {
-    .header {
-        padding: 10px;
-    }
-
-    .nav ul li {
-        margin: 3px 0;
-    }
-
-    .socials {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .socials a {
-        margin: 3px 0;
-    }
-}
-
+    <footer class="footer">
+        <p>&copy; 2024 Jhoxz Connect. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
