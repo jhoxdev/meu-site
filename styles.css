@@ -1,7 +1,9 @@
-/* styles.css */
+/* Estilos básicos */
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
 }
 
 .header {
@@ -9,105 +11,78 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #222;
+    background-color: #333;
     color: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.logo h1 {
-    font-size: 24px;
+.header .logo h1 {
     margin: 0;
 }
 
 .nav ul {
-    list-style: none;
+    list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 20px;
+}
+
+.nav ul li {
+    margin: 0 10px;
 }
 
 .nav ul li a {
-    text-decoration: none;
     color: #fff;
-    font-size: 16px;
-    transition: color 0.3s;
-}
-
-.nav ul li a:hover {
-    color: #1e90ff;
-}
-
-.socials {
-    display: flex;
-    gap: 15px;
+    text-decoration: none;
 }
 
 .socials a {
     color: #fff;
-    font-size: 20px;
-    transition: transform 0.3s, color 0.3s;
+    margin: 0 10px;
+    text-decoration: none;
 }
 
-.socials a:hover {
-    color: #1e90ff;
-    transform: scale(1.1);
-}
-
-/* Ajuste para telas pequenas (smartphones) */
-@media (max-width: 600px) {
+/* Estilos responsivos */
+@media (max-width: 768px) {
     .header {
         flex-direction: column;
-        text-align: center;
+        align-items: flex-start;
     }
 
     .nav ul {
         flex-direction: column;
+        width: 100%;
     }
 
-    .portfolio-gallery {
+    .nav ul li {
+        margin: 5px 0;
+    }
+
+    .socials {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .socials a {
+        margin: 5px 10px 0 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 10px;
+    }
+
+    .nav ul li {
+        margin: 3px 0;
+    }
+
+    .socials {
         flex-direction: column;
+        align-items: flex-start;
     }
-}
 
-/* Centralizando a seção de portfólio */
-.portfolio {
-    text-align: center; /* Centraliza o texto do título */
-    padding: 40px 20px;
-}
-
-.portfolio h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-/* Flexbox para centralizar a galeria */
-.portfolio-gallery {
-    display: flex;
-    justify-content: center; /* Centraliza os itens horizontalmente */
-    align-items: center; /* Garante que os itens fiquem alinhados na vertical */
-    flex-wrap: wrap; /* Faz com que os itens se ajustem em várias linhas se necessário */
-    gap: 20px; /* Adiciona espaçamento entre os itens */
-}
-
-/* Estilizando cada item da galeria */
-.portfolio-item {
-    background-color: #fff;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px; /* Tamanho fixo para os itens */
-    text-align: center;
-}
-
-.portfolio-item img {
-    width: 100%; /* Garante que as imagens ocupem toda a largura do item */
-    height: auto;
-    border-radius: 8px;
-}
-
-.portfolio-item p {
-    margin-top: 10px;
-    font-size: 1rem;
-    color: #333;
+    .socials a {
+        margin: 3px 0;
+    }
 }
