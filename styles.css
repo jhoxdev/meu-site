@@ -69,3 +69,45 @@ body {
         flex-direction: column;
     }
 }
+
+/* Centralizando a seção de portfólio */
+.portfolio {
+    text-align: center; /* Centraliza o texto do título */
+    padding: 40px 20px;
+}
+
+.portfolio h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Flexbox para centralizar a galeria */
+.portfolio-gallery {
+    display: flex;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Garante que os itens fiquem alinhados na vertical */
+    flex-wrap: wrap; /* Faz com que os itens se ajustem em várias linhas se necessário */
+    gap: 20px; /* Adiciona espaçamento entre os itens */
+}
+
+/* Estilizando cada item da galeria */
+.portfolio-item {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Tamanho fixo para os itens */
+    text-align: center;
+}
+
+.portfolio-item img {
+    width: 100%; /* Garante que as imagens ocupem toda a largura do item */
+    height: auto;
+    border-radius: 8px;
+}
+
+.portfolio-item p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #333;
+}
