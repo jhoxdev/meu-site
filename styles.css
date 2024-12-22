@@ -3,7 +3,9 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #333333; /* Cor de fundo */
+    color: #ffffff; /* Cor do texto para contraste */
+    text-align: center; /* Centraliza o texto por padrão */
 }
 
 .header {
@@ -11,8 +13,9 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #333;
+    background-color: #444;
     color: #fff;
+    text-align: left; /* Mantém o texto do header à esquerda */
 }
 
 .header .logo h1 {
@@ -58,14 +61,17 @@ body {
 .intro, .gallery, .contact {
     padding: 20px;
     margin-bottom: 20px;
-    background-color: #fff;
+    background-color: #444;
+    color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centraliza o texto nas seções principais */
 }
 
 .gallery-container {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    justify-content: center; /* Centraliza o conteúdo da galeria */
 }
 
 .gallery-container img {
@@ -99,7 +105,7 @@ body {
 .footer {
     text-align: center;
     padding: 10px;
-    background-color: #333;
+    background-color: #444;
     color: #fff;
 }
 
