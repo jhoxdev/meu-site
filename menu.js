@@ -19,7 +19,3 @@ document.addEventListener('DOMContentLoaded', () => {
         overlayMenu.style.display = 'none';
     });
 });
-
-    document.addEventListener('contextmenu', function(e) {
-    e.preventDefault();
-});
