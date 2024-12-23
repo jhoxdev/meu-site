@@ -478,3 +478,7 @@ footer .line-footer p a {
         text-align: center;
     }
 }
+
+img {
+    pointer-events: none;
+  }
